@@ -1,0 +1,10 @@
+[Unit]
+Description=Starts Xorg, XFCE & Sunshine
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/etc/systemd/system/moonshine.sh
+
+[Install]
+WantedBy=multi-user.target
